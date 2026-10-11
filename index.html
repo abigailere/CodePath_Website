@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <!-- head
 
         Purpose:
@@ -32,12 +33,17 @@
         - [ ] Project 4 (REQUIRED FEATURE) 
         - [ ] Any time after
         -->
-        <img id="header-img" src="./img/logo500.png"/>
+<div class="header">
+    <div id="header-left">
+        <img id="header-img" src="./img/handshake.jpg" alt="Pitch To Me logo"/>
+    </div>
+    <div id="header-right">
         <h1>Pitch To Me</h1>
         <h2>Subtitle</h2>
-        <button type="button">Register</button>
-        <button type="button">Attending Companies</button>
-
+        <button type="button" class="header-button">Register</button>
+        <button type="button" class="header-button">Attending Companies</button>
+    </div>
+</div>
         
         <!-- about
 
@@ -52,7 +58,7 @@
         - [ ] Any time between / after
         --> 
         <h2>About the Event</h2>
-        <p>You know you want to hire me, so why should I work for you? If you're feeling bold enough, join me October 1st for a night of___
+        <p class="about-text"> You know you want to hire me, so why should I work for you? If you're feeling bold enough, join me October 1st for a night of___
             This is a low stress environment so don't worry about your competitors.
             Best pitch gets a new developer for their team! Can't wait to meet you!</p>
 

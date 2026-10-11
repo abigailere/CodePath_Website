@@ -49,42 +49,82 @@ body {
 ***/
 
 h1 {
-    
+  color:var(--accent-color-darkest);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  font-style: normal;
 }
 
 h2 {
-    
+  color:var(--accent-color-medium);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+
 }
 
 h3 {
-    
+  color:var(--accent-color-medium);
+  font-family:var(--font-heading);
+  font-weight: 1000;
+  font-style: normal;
 }
 
 h4 {
-    
+  color: var(--accent-color-darkest);
+  font-family: var(--font-heading);
+  font-weight: 1000;
+  font-style: normal;
 }
 
 p {
-    
+  color: var(--text-color-dark);
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-style: normal;
 }
 
 a,
 a * {
-    
+  color: inherit
+  /* may take this out*/  
+}
+
+a:link {
+  color: var(--accent-color-dark);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--accent-color-light);
+}
+
+  
+a:hover {
+  color: var(--accent-color-darkest);
+  text-decoration: underline;
+}
+
+  
+
+a:active {
+  color: var(--accent-color-yellow);
 }
 
 button {
-    /* Example Style, replace with your own! */
-    background-color: green;    /* button color */
-    color: white;               /* text color */
-    border: none;               /* hides the default border */
-    padding: 5px 12px;          /* space between button's text and edge */
-    border-radius: 5px;         /* curved edges instead of square */
-    cursor: pointer;            /* makes the cursor change when over button */
+/* Example Style, replace with your own! */
+background-color: var(--accent-color-medium);/* button color */
+color:var(--accent-color-darkest); /* text color */
+border: none; /* hides the default border */
+padding: 5px 12px; /* space between button's text and edge */
+border-radius: 5px; /* curved edges instead of square */
+cursor: pointer; /* makes the cursor change when over button */
 }
 
 button:hover {
-    /* Make the button look different when the user hovers over it */
+  /* Make the button look different when the user hovers over it */
+  background-color: var(--accent-color-light);
 }
 
 /*** header ***
@@ -99,9 +139,51 @@ button:hover {
 ***/
 
 .header { /* Example A: This styles elements with class="header" */
-    
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--accent-color-light);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 10%;
 }
 
+#header-left {
+    width: 35%
+}
+
+#header-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min-content; /*cap how large the image can appear on your page*/
+}
+
+#header-right {
+    text-align: center;
+    width: 65%
+}
+
+.header-button {
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--accent-color-medium);
+    color:var(--accent-color-darkest);
+    text-align: center;
+    padding: 2%;
+    border: 10px var(--bg-color-dark-mode);
+    cursor: pointer;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.5;
+}
 /*** footer ***
   
   Purpose:
@@ -171,8 +253,12 @@ button:hover {
 ***/
 
 :root {
+    /* Text Color */
+     
+    /* Fonts */
+
     /* Light Mode */
-    --bg-color: #a6a0cf;
+    --bg-color: #e7d6b3;
     --text-color: #231942;
 
     /* Dark Mode */
@@ -180,13 +266,15 @@ button:hover {
     --text-color-dark-mode: #fff;
 
     /* Accent Colors */
-    --accent-color-light: #d2cff5;
-    --accent-color-medium: #684fb5;
-    --accent-color-dark: #482f95;
-    --accent-color-darkest: #231942;
-    --accent-color-green: #28eb76;
+    --accent-color-light: #e9bd3a;
+    --accent-color-medium: #e38718;
+    --accent-color-dark: #d74611;
+    --accent-color-darkest: #531c08;
+    --accent-color-yellow: #df8e14;
 
     /* Error Colors */
     --error-color: #f8bbd0;
     --error-color-border: #e63946;
+
+
 }
