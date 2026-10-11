@@ -138,8 +138,9 @@ button:hover {
   - [ ] Any time after
 ***/
 
-.header { /* Example A: This styles elements with class="header" */
+.header-container { /* Example A: This styles elements with class="header" */
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 30px;
     background-color: var(--accent-color-light);
@@ -147,20 +148,21 @@ button:hover {
     border-radius: 10px;
     text-align: center;
     padding-top: 5%;
+    margin-top: 10%;
     margin-bottom: 10%;
 }
 
-#header-left {
+.header-item:nth-of-type(1){
     width: 35%
 }
 
-#header-img {
-    width: 200px;
+.header-item:nth-of-type(2){
+    width: 400px;
     height: auto;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    max-width: min-content; /*cap how large the image can appear on your page*/
+    max-width: max-content; /*cap how large the image can appear on your page*/
 }
 
 #header-right {
@@ -175,11 +177,17 @@ button:hover {
     background-color: var(--accent-color-medium);
     color:var(--accent-color-darkest);
     text-align: center;
-    padding: 2%;
-    border: 10px var(--bg-color-dark-mode);
+    padding: 10px 20px;
+    border: 3px solid var(--bg-color-dark-mode);
     cursor: pointer;
 }
 
+#header-img {
+    width: 100%;      /* fill its 35% container, no more */
+    height: auto;     /* keep the correct proportions */
+    border-radius: 10px;
+    display: block;
+}
 .about-text {
     font-size: 18px;
     line-height: 1.5;
@@ -198,7 +206,34 @@ button:hover {
     
 }
 
-/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
+
+/*** Navigation bar (navbar) ***
+  
+  Purpose:
+  - Add style rules for your website's navbar
+
+  When To Modify:
+  - [ ] Project 4 (REQUIRED FEATURE) 
+  - [ ] Any time after
+***/
+
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul li a {
+    
+}
+
+.navbar ul li a:hover {
+    
+}
 
 /*** About Section ***
   
