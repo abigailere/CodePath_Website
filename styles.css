@@ -92,7 +92,7 @@ a * {
 }
 
 a:link {
-  color: var(--accent-color-dark);
+  color: var(--accent-color-darkest);
   text-decoration: none;
 }
 
@@ -102,11 +102,9 @@ a:visited {
 
   
 a:hover {
-  color: var(--accent-color-darkest);
+  color:#3e3377;
   text-decoration: underline;
 }
-
-  
 
 a:active {
   color: var(--accent-color-yellow);
@@ -219,7 +217,12 @@ button:hover {
 
 .navbar ul {
     z-index: 1000; /* Ensures the navbar is on top of other elements */
-    
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 10%;
 }
 
 .navbar ul li {
@@ -228,11 +231,17 @@ button:hover {
 }
 
 .navbar ul li a {
-    
+    display: block;
+    text-decoration: none;
+    color: var(--accent-color-darkest);
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 12px; 
 }
 
 .navbar ul li a:hover {
-    
+    text-decoration: overline;
+    color:#3e3377;
 }
 
 /*** About Section ***
