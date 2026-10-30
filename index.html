@@ -136,7 +136,7 @@ When To Modify:
     <h2>RSVP</h2>
     <div class="rsvp-container">
         <div class="rsvp-para">
-            <!-- info goes here -->
+            Complete this form to secure your spot!
         </div>
         <div class="rsvp-participants">
             <p>🎟️ DJ from Texas has RSVP'd.</p>
@@ -144,11 +144,20 @@ When To Modify:
             <p>🎟️ Teresa from Montana has RSVP'd.</p>
         </div>
     </div>
-
     <!--- Sign RSVP Form --->
     <div class="form-container">
         <form id="rsvp-form" title="rsvp-form">
-            <!-- form inputs go here -->
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Jane">
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe"><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="abc@gmail.com">
+
+            <label for="company">Company name:</label>
+            <input type="text" id="company" name="company" placeholder="company">
         </form>
         <!-- Submit button -->
         <button id="rsvp-button">Submit RSVP</button>

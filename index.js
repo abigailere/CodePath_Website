@@ -37,14 +37,31 @@ themeButton.addEventListener("click", toggleDarkMode);
 ***/
 
 // Step 1: Add your query for the submit RSVP button here
+const rsvpButton = document.getElementById("rsvp-button");
 
 const addParticipant = (event) => {
     // Step 2: Write your code to manipulate the DOM here
 
+
+    // Get the values the user entered
+    const fname = document.getElementById("fname").value;
+    const lname = document.getElementById("lname").value;
+    const email = document.getElementById("email").value;
+    const company = document.getElementById("company").value;
+
+    // Create a new <p> element and set its text
+    const newParticipant = document.createElement("p");
+    newParticipant.textContent = `🎟️ ${fname} ${lname} (${email}) from ${company} has RSVP'd.`;
+
+    // Find the rsvp-participants div and add the new <p> to it
+    const participantsDiv = document.querySelector(".rsvp-participants");
+    participantsDiv.appendChild(newParticipant);
+
     event.preventDefault();
 }
-
 // Step 3: Add a click event listener to the submit RSVP button here
+rsvpButton.addEventListener("click", addParticipant);
+
 
 /*** Form Validation [PLACEHOLDER] [ADDED IN UNIT 7] ***/
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
