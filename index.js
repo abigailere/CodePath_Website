@@ -100,11 +100,14 @@ const validateForm = () => {
 
 }
 
-  // TODO: If no errors, call addParticipant() and clear fields
-
-
 // Step 3: Replace the form button's event listener with a new one that calls validateForm()
 rsvpButton.addEventListener("click", validateForm);
+
+/*** Scroll to RSVP ***/
+const registerButton = document.getElementById("register-button");
+registerButton.addEventListener("click", () => {
+    document.getElementById("rsvp").scrollIntoView({ behavior: "smooth" });
+});
 
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
