@@ -283,7 +283,42 @@ button:hover {
 /*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
-/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
+
+/* Default dark mode style */
+.dark-mode {
+  background-color: var(--bg-color-dark-mode);
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1 {
+    color: blue;
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+  color: var(--text-color-dark-mode);
+}
+
+.dark-mode p {
+  color: var(--text-color-dark-mode);
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+
+}
+
+/* Add style to button */
+#theme-button {
+
+}
+
+
+/* Customize Dark Mode Theme */
+.dark-mode {
+
+
+}
 
 /*** Custom Colors (OPTIONAL) ***
   
